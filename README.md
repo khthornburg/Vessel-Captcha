@@ -32,9 +32,13 @@ python -m captcha.preprocessing.seg_patch_extraction --skull_stripping_dir <path
 ```
 ### 4. Training Models
 ##### 2D-PnetCl: 
-We perform training a classification model using the following command:
+To train the PnetCls model, we use the following function defined in train_PT.py:
 ```sh
-python -m captcha.train_pnetcls --model_arch 'pnetcls' --patch_dir <path-to-extracted-patches>  --train_metadata_filepath <path-to-save-metadata> --model_filepath <path-to-save model>
+train_PT_model(train_patch_dir = str, label_patch_dir = str, model_filepath = str, 
+               validation_split = float,batch_size = int, 
+               patch_size = int, normalize = bool, pixel_wise = bool, 
+               epochs = int, Model = Pnet/Wnet (2 models classes defined in pnetcls_PT.py and wnet_PT.py respectively),
+               lr = float, momentum = float, criterion, optimizer)
 ```
 ##### Data Augmentation for 2D-WnetSeg (optional):
 ```sh
