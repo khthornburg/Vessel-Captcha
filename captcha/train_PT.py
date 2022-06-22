@@ -6,6 +6,7 @@ Date created: Jun 13, 2022
 This script can trains any model given te proper HP as arguments. By default trains a Pnet
 """
 from utils.wnet_PT import Wnet  
+from utils.unet_PT import UNet  
 from utils.pnetcls_PT import Pnet
 
 
