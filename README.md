@@ -25,8 +25,8 @@ To train the PnetCls and WnetSeg models, we use the following function defined i
 train_PT_model(train_patch_dir = str, label_patch_dir = str, model_filepath = str, 
                validation_split = float,batch_size = int, 
                patch_size = int, normalize = bool, pixel_wise = bool, 
-               epochs = int, Model = Pnet/Wnet (2 models classes defined in pnetcls_PT.py and wnet_PT.py respectively),
-               lr = float, momentum = float, criterion, optimizer)
+               epochs = int, Model = Pnet/Wnet, lr = float, momentum = float,
+               criterion, optimizer)
 ```
-The train model is saved in model_filepath
-criterion and optimizer are taken from torch.nn and torch respectively
+The trained model is saved in model_filepath
+criterion and optimizer are taken from torch.nn and torch.optim respectively
