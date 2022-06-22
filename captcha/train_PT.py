@@ -21,7 +21,7 @@ from tqdm import tqdm
 import torch
 import torch.nn as nn
 import numpy as np
-from metrics import dice_coeff, dice_loss,GDLoss
+from utils.metrics_PT import dice_coeff, dice_loss,GDLoss
 import time
 
 def train_PT_model(train_patch_dir, label_patch_dir, model_filepath, 
