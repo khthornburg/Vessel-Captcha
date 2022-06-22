@@ -9,7 +9,7 @@ from utils.wnet_PT import Wnet
 from utils.pnetcls_PT import Pnet
 
 
-from getdata_PT import Dataset,Dataset_np_1
+from getdata_PT import Dataset_np_1
 
 from torch.utils.data import DataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
