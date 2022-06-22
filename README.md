@@ -1,13 +1,13 @@
 # Vessel-Captcha: An Efficient Learning Framework for Vessel Annotation and Segmentation
 
 <img src="imgs/pipeline.png" >
-### Pytorch Models
+### 1. Pytorch Models
 This is the implementation of our Vessel-CAPTCHA framework for vessel brain MRI segmentation in Pytorch.
 #### 2D-PnetCl: 
 We defined a Pnet class in pnetcls_PT.py which serves as a pytroch implementation of the PnetCls model.
 #### 2D-WnetSeg: 
 We defined a Wnet class in wnet_PT.py which serves as a pytroch implementation of the Wnet model.
-### Training Models
+### 2. Training Models
 ##### Datasets:
 To train the models, the function defined in train_PT.py uses pytorch dataloaders built using dataset classes defined in get_data_PT.py. Futher comments in get_data_PT.py detail the initialization of the class
 ##### 2D-PnetCl & 2D-WnetSeg Training: 
