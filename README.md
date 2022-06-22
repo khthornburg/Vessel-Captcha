@@ -3,6 +3,7 @@
 Listed bellow are the .py files that defined/ trained keras models and the .py that are their pytorch equivalent
 
 - pnetcls.py -> pnetcls_PT.py 
+- unet.py -> unet_PT.py
 - wnet.py & metrics.py -> wnet_PT.py & metrics_PT.py
 - train_pnetcls.py & train_wnetseg.py -> train_PT.py & getdata_PT.py
 
