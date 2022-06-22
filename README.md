@@ -1,6 +1,7 @@
 # Vessel-Captcha: An Efficient Learning Framework for Vessel Annotation and Segmentation
 
 <img src="imgs/pipeline.png" >
+
 ### 1. Pytorch Models
 
 This is the implementation of our Vessel-CAPTCHA framework for vessel brain MRI segmentation in Pytorch.
