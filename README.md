@@ -1,24 +1,26 @@
-# Vessel-Captcha: An Efficient Learning Framework for Vessel Annotation and Segmentation
+## Semester Project
 
-<img src="imgs/pipeline.png" >
+Listed bellow are the .py files that defined/ trained keras models and the .py that are their pytorch equivalent
 
-### 1. Pytorch Models
+- pnetcls.py -> pnetcls_PT.py 
+- wnet.py -> wnet_PT.py
+- train_pnetcls.py & train_wnetseg.py -> train_PT.py & getdata_PT.py
 
-#### 2D-PnetCl: 
+As we translated the code from keras to pytorch we shifted from a scripting to object oriented coding style. We did 
 
-We defined a Pnet class in pnetcls_PT.py which serves as a pytroch implementation of the PnetCls model.
+### pnetcls_PT.py: 
 
-#### 2D-WnetSeg: 
+We defined a Pnet class which serves as a pytroch implementation of the PnetCls model.
 
-We defined a Wnet class in wnet_PT.py which serves as a pytroch implementation of the Wnet model.
+### wnet_PT.py: 
 
-### 2. Training Models
+We defined a Wnet class which serves as a pytroch implementation of the Wnet model.
 
-#### Datasets:
+### getdata_PT.py:
 
-To train the models, the function defined in train_PT.py uses pytorch dataloaders built using dataset classes defined in get_data_PT.py. Futher comments in get_data_PT.py detail the initialization of the class
+To train the models, the function defined in train_PT.py uses pytorch dataloaders built using dataset classes defined in get_data_PT.py. Futher comments in get_data_PT.py detail the initialization of the class.
 
-#### 2D-PnetCl & 2D-WnetSeg Training: 
+### train_PT.py: 
 
 To train the PnetCls and WnetSeg models, we use the following function defined in train_PT.py:
 ```sh
